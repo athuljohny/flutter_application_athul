@@ -1,4 +1,7 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_application_athul/Home.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -13,6 +16,14 @@ class Splash extends StatefulWidget {
 }
 
 class _SplashState extends State<Splash> {
+  @override
+  void initState() {
+    Timer(Duration(seconds: 4), () {
+      Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => Homepage()));
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
