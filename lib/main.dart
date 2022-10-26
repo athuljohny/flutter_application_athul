@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_athul/Home.dart';
+import 'package:flutter_application_athul/Home.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -39,15 +40,15 @@ class _SplashState extends State<Splash> {
             children: const [
               ///fetching image from asset way 1
               Image(
-                image: AssetImage("assets/images/home.png"),
+                image: AssetImage("assets/images/op.png"),
                 height: 100,
                 width: 100,
               ),
 
               ///fetching image from asset way 2
               //Image.asset("assets/images/climatechange.png"),
-              Text("MYAPP",
-                  style: TextStyle(fontSize: 40, color: Colors.orange)),
+              Text("feathergram",
+                  style: TextStyle(fontSize: 20, color: Colors.orange)),
             ],
           ),
         ),

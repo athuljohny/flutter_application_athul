@@ -1,51 +1,71 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_athul/login.dart';
+import 'package:flutter_application_athul/signup.dart';
 
 class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("LoginPage"),
-        ),
         body: SingleChildScrollView(
-          child: Column(children: [
-            const Padding(
-              padding: EdgeInsets.only(top: 20),
-              child: Text(
-                "LoginPage",
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-              ),
+      child: Center(
+        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          const Padding(
+            padding: EdgeInsets.only(top: 40),
+            child: Text(
+              "HELLO THERE",
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
-            const Padding(
-              padding: EdgeInsets.all(15.0),
-              child: TextField(
-                decoration: InputDecoration(
-                    label: Text("username"),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
-                    )),
-              ),
+          ),
+          const Padding(
+            padding: EdgeInsets.all(20.5),
+            child: Text(
+                "Automatic identity verification which enables you to  ",
+                style: TextStyle(fontSize: 15)),
+          ),
+          Text("verify your identity", style: TextStyle(fontSize: 15)),
+          const Padding(
+            padding: EdgeInsets.only(top: 200),
+            child: Image(
+              image: AssetImage("assets/images/fi.png"),
+              height: 150,
+              width: 150,
             ),
-            const Padding(
-              padding: EdgeInsets.all(15.0),
-              child: TextField(
-                obscuringCharacter: "*",
-                obscureText: true,
-                decoration: InputDecoration(
-                    label: Text("password"),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
-                    )),
-              ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(
+              top: 150,
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 20, bottom: 30),
-              child: ElevatedButton(onPressed: () {}, child: Text("login")),
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Signuppage()));
+              },
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.pink,
+                  fixedSize: const Size(300, 50),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(50))),
+              child: Text("signup"),
             ),
-            TextButton(
-                onPressed: () {}, child: Text("not a user? Register here"))
-          ]),
-        ));
+          ),
+          Padding(
+            padding: EdgeInsets.all(20.5),
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => loginpage()));
+              },
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.pink,
+                  fixedSize: const Size(300, 50),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(50))),
+              child: Text("login"),
+            ),
+          )
+        ]),
+      ),
+    ));
   }
 }
