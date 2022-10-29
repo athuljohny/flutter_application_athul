@@ -1,8 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_athul/Home.dart';
-import 'package:flutter_application_athul/Home.dart';
+import 'package:flutter_application_athul/listview.dart';
+
+import 'package:flutter_application_athul/loginwithvaildation.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -21,7 +22,7 @@ class _SplashState extends State<Splash> {
   void initState() {
     Timer(Duration(seconds: 4), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => Homepage()));
+          context, MaterialPageRoute(builder: (context) => Mainscreen()));
     });
   }
 

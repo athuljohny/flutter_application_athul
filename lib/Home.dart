@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_athul/login.dart';
+
 import 'package:flutter_application_athul/signup.dart';
 
 class Homepage extends StatelessWidget {
@@ -23,7 +24,7 @@ class Homepage extends StatelessWidget {
                 "Automatic identity verification which enables you to  ",
                 style: TextStyle(fontSize: 15)),
           ),
-          Text("verify your identity", style: TextStyle(fontSize: 15)),
+          const Text("verify your identity", style: TextStyle(fontSize: 15)),
           const Padding(
             padding: EdgeInsets.only(top: 200),
             child: Image(
@@ -37,10 +38,7 @@ class Homepage extends StatelessWidget {
               top: 150,
             ),
             child: ElevatedButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Signuppage()));
-              },
+              onPressed: () {},
               style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.pink,
                   fixedSize: const Size(300, 50),
@@ -52,10 +50,7 @@ class Homepage extends StatelessWidget {
           Padding(
             padding: EdgeInsets.all(20.5),
             child: ElevatedButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => loginpage()));
-              },
+              onPressed: () {},
               style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.pink,
                   fixedSize: const Size(300, 50),
