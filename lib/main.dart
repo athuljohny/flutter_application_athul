@@ -1,9 +1,16 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_athul/listview.dart';
-
-import 'package:flutter_application_athul/loginwithvaildation.dart';
+import 'package:flutter_application_athul/GridView.dart';
+import 'package:flutter_application_athul/List_builder.dart';
+import 'package:flutter_application_athul/bottom.dart';
+import 'package:flutter_application_athul/gridextened.dart';
+import 'package:flutter_application_athul/gridviewcustom.dart';
+import 'package:flutter_application_athul/listview_withseperator.dart';
+import 'package:flutter_application_athul/normalgrid.dart';
+import 'package:flutter_application_athul/samplegrid.dart';
+import 'package:flutter_application_athul/stackgrid.dart';
+import 'package:flutter_application_athul/stacksample.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -20,9 +27,9 @@ class Splash extends StatefulWidget {
 class _SplashState extends State<Splash> {
   @override
   void initState() {
-    Timer(Duration(seconds: 4), () {
+    Timer(Duration(seconds: 5), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => Mainscreen()));
+          context, MaterialPageRoute(builder: (context) => MyStackwithgrid()));
     });
   }
 
