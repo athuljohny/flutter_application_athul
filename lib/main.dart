@@ -1,16 +1,11 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_athul/GridView.dart';
-import 'package:flutter_application_athul/List_builder.dart';
-import 'package:flutter_application_athul/bottom.dart';
-import 'package:flutter_application_athul/gridextened.dart';
-import 'package:flutter_application_athul/gridviewcustom.dart';
-import 'package:flutter_application_athul/listview_withseperator.dart';
-import 'package:flutter_application_athul/normalgrid.dart';
-import 'package:flutter_application_athul/samplegrid.dart';
-import 'package:flutter_application_athul/stackgrid.dart';
-import 'package:flutter_application_athul/stacksample.dart';
+import 'package:flutter_application_athul/assignment/Listcheckbox.dart';
+import 'package:flutter_application_athul/assignment/david.dart';
+import 'package:flutter_application_athul/assignment/ecommerrce.dart';
+import 'package:flutter_application_athul/assignment/whatsappui.dart/bottomwhatsapp.dart';
+import 'package:flutter_application_athul/staggeredgrid.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -29,7 +24,7 @@ class _SplashState extends State<Splash> {
   void initState() {
     Timer(Duration(seconds: 5), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => MyStackwithgrid()));
+          context, MaterialPageRoute(builder: (context) => Home()));
     });
   }
 

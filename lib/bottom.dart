@@ -59,7 +59,7 @@ class _BottombarState extends State<Bottombar> {
         backgroundColor: Colors.black,
         currentIndex: selectedindex,
         onTap: onitemtap,
-        items: [
+        items: const [
           BottomNavigationBarItem(
               icon: Icon(Icons.home),
               label: "home",
