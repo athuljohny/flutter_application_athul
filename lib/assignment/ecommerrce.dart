@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Homes extends StatelessWidget {
-  Homes({Key? key}) : super(key: key);
+class Ecommerce extends StatelessWidget {
+  Ecommerce({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class Homes extends StatelessWidget {
               pinned: true,
               backgroundColor: Colors.white,
               title: Container(
-                height: 6,
+                height: 50,
                 decoration: BoxDecoration(
                   color: Colors.grey.withOpacity(.2),
                   borderRadius: BorderRadius.circular(32),
@@ -76,29 +76,29 @@ class Homes extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.all(3),
                 child: Container(
-                  height: 15,
-                  width: 80,
+                  height: 150,
+                  width: 150,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(25),
                       image: DecorationImage(
                           fit: BoxFit.fill,
                           image: NetworkImage(
-                            'https://w0.peakpx.com/wallpaper/570/990/HD-wallpaper-purple-shades-flower-petals-background-purple-aesthetic.jpg',
+                            'https://static.vecteezy.com/system/resources/previews/001/557/683/original/abstract-overlapping-blue-background-free-vector.jpg',
                           ))),
                   child: Padding(
-                    padding: EdgeInsets.only(left: 3.0),
+                    padding: EdgeInsets.only(left: 20),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: EdgeInsets.only(top: 5),
+                          padding: EdgeInsets.only(top: 30),
                           child: Text(
                             'A Summer Surpise',
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
                         SizedBox(
-                          height: 1,
+                          height: 10,
                         ),
                         Text(
                           'Cashback 20%',
@@ -115,7 +115,7 @@ class Homes extends StatelessWidget {
 
               ///
               Padding(
-                padding: EdgeInsets.only(left: 2, right: 2),
+                padding: EdgeInsets.only(left: 20, right: 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
@@ -163,26 +163,26 @@ class Homes extends StatelessWidget {
               ),
 
               Padding(
-                padding: EdgeInsets.only(left: 2),
+                padding: EdgeInsets.only(left: 30),
                 child: Container(
-                  width: 80,
-                  height: 20,
+                  width: 150,
+                  height: 100,
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
                       Padding(
                         padding: EdgeInsets.all(1),
                         child: Container(
-                          width: 70,
-                          height: 15,
+                          width: 250,
+                          height: 150,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                               image: DecorationImage(
                                   fit: BoxFit.fill,
                                   image: NetworkImage(
-                                      'https://hips.hearstapps.com/hmg-prod/images/best-smartphones-2022-1646858128.jpg'))),
+                                      'https://ak.picdn.net/shutterstock/videos/8144629/thumb/1.jpg'))),
                           child: Padding(
-                            padding: EdgeInsets.all(2),
+                            padding: EdgeInsets.all(20),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -204,10 +204,10 @@ class Homes extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.all(1),
+                        padding: EdgeInsets.all(10),
                         child: Container(
-                          width: 70,
-                          height: 15,
+                          width: 250,
+                          height: 150,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                               image: DecorationImage(
@@ -215,7 +215,7 @@ class Homes extends StatelessWidget {
                                   image: NetworkImage(
                                       'https://s3.envato.com/files/9b00ad62-2d79-480e-b90c-390a5aa79305/inline_image_preview.jpg'))),
                           child: Padding(
-                            padding: EdgeInsets.all(2),
+                            padding: EdgeInsets.all(17),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -242,7 +242,7 @@ class Homes extends StatelessWidget {
               ),
 
               Padding(
-                padding: EdgeInsets.all(4),
+                padding: EdgeInsets.all(15),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -260,49 +260,49 @@ class Homes extends StatelessWidget {
               ),
 
               Container(
-                height: 20,
-                width: 80,
+                height: 150,
+                width: 150,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
                     Padding(
-                      padding: EdgeInsets.only(left: 2, right: 2),
+                      padding: EdgeInsets.only(left: 29, right: 29),
                       child: Container(
-                        height: 20,
-                        width: 15,
+                        height: 150,
+                        width: 150,
                         decoration: BoxDecoration(
                             image: DecorationImage(
                                 fit: BoxFit.contain,
                                 image: NetworkImage(
-                                    'https://www.pngall.com/wp-content/uploads/2/Wireless-Game-Controller-PNG-Clipart.png')),
+                                    'https://media.istockphoto.com/id/148171018/photo/video-game-gamepad.jpg?s=612x612&w=0&k=20&c=AEQXmZPfTDjhWdf0ZNFvVBExqs6zpDZlB9FPWYsYhDs=')),
                             borderRadius: BorderRadius.circular(20),
                             color: Colors.grey.withOpacity(.2)),
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(left: 2, right: 2),
+                      padding: EdgeInsets.only(left: 29, right: 29),
                       child: Container(
-                        height: 20,
-                        width: 15,
+                        height: 150,
+                        width: 150,
                         decoration: BoxDecoration(
                             image: DecorationImage(
                                 fit: BoxFit.contain,
                                 image: NetworkImage(
-                                    'https://cdn.shopify.com/s/files/1/0257/4601/4261/products/FB-292-NIVIA-SHINING-STAR-FOOTBALL-1_480x_03f0291f-7ff0-486e-9201-0acc91b69813_480x480.webp?v=1650801296')),
+                                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy-7VJMr4ZQnMBBHwP_HgT1BopdkCicbB2LQ&usqp=CAU')),
                             borderRadius: BorderRadius.circular(20),
                             color: Colors.grey.withOpacity(.2)),
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(left: 2, right: 2),
+                      padding: EdgeInsets.only(left: 29, right: 29),
                       child: Container(
-                        height: 20,
-                        width: 15,
+                        height: 150,
+                        width: 150,
                         decoration: BoxDecoration(
                             image: DecorationImage(
                                 fit: BoxFit.contain,
                                 image: NetworkImage(
-                                    'https://static.vecteezy.com/system/resources/thumbnails/009/377/766/small/3d-book-icon-with-transparent-background-free-png.png')),
+                                    'https://media.istockphoto.com/id/1328049157/photo/mens-short-sleeve-t-shirt-mockup-in-front-and-back-views.jpg?b=1&s=170667a&w=0&k=20&c=CZ5Emlrh-C4jzojJ8b8YBy1frxpQr6aMcLmEBrkty7Q=')),
                             borderRadius: BorderRadius.circular(20),
                             color: Colors.grey.withOpacity(.2)),
                       ),
@@ -370,8 +370,8 @@ class MyButton extends StatelessWidget {
           decoration: BoxDecoration(
               color: Color(0xFFF5CFBA),
               borderRadius: BorderRadius.circular(10)),
-          height: 6,
-          width: 6,
+          height: 50,
+          width: 50,
           child: Center(
             child: Icon(
               iconData,
@@ -379,10 +379,12 @@ class MyButton extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(height: 1),
         SizedBox(
-          width: 5,
-          height: 5,
+          height: 10,
+        ),
+        SizedBox(
+          width: 50,
+          height: 50,
           child: Text(
             btname,
             style: TextStyle(fontSize: 15),

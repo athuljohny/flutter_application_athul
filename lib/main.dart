@@ -2,9 +2,14 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_athul/assignment/Listcheckbox.dart';
-import 'package:flutter_application_athul/assignment/david.dart';
+
 import 'package:flutter_application_athul/assignment/ecommerrce.dart';
+import 'package:flutter_application_athul/assignment/hotelui.dart';
+import 'package:flutter_application_athul/assignment/stackassgn.dart';
+import 'package:flutter_application_athul/assignment/staggeredui.dart/stagui.dart';
 import 'package:flutter_application_athul/assignment/whatsappui.dart/bottomwhatsapp.dart';
+import 'package:flutter_application_athul/namedroute.dart';
+import 'package:flutter_application_athul/passdatabwscreen.dart/main_product.dart';
 import 'package:flutter_application_athul/staggeredgrid.dart';
 
 void main() {
@@ -24,7 +29,7 @@ class _SplashState extends State<Splash> {
   void initState() {
     Timer(Duration(seconds: 5), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => Home()));
+          context, MaterialPageRoute(builder: (context) => Prodlist()));
     });
   }
 
